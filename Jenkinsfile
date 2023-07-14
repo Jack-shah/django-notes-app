@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('checkout') {
             steps {
-                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/LondheShubham153/django-notes-app.git']])
+                checkout scmGit(branches: [[name: '*/project1']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/Jack-shah/django-notes-app.git']])
             }
         }
         stage('docker build') {
