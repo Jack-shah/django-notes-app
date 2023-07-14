@@ -29,6 +29,7 @@ pipeline {
             steps {
                 //sh"docker run -d -p 8000:8000 awajid980/project1:1.0"     
                 sh"docker-compose down && docker-compose up"
+                
             }
         }
     }
